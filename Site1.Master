@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Library_Management_System_App.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+       
+        body {
+            background-image: url("images/home.png");
+            background-size: 100%;
+        }
+        .auto-style1 {
+            background-color: #669999;
+        }
+        .auto-style3 {
+            text-align: center;
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            font-size: x-large;
+            height: 154px;
+            background-color: #466AA5;
+        }
+        
+        #button1 {
+            padding: 1rem 2rem;
+            border-radius: .5rem;
+            border: none;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #f4f0ff;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            cursor: pointer;
+        }
+        .auto-style5 {
+            font-size: xx-large;
+            color: #FFFFFF;
+        }
+        .auto-style7 {
+            font-size: medium;
+            text-decoration: none;
+            color: #000000;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="auto-style1">
+            <div class="auto-style3">
+                <strong><span class="auto-style5">Library Management System</span></strong>&nbsp;<br />
+                <br />
+                <asp:HyperLink ID="HyperLink2" runat="server" CssClass="auto-style7" NavigateUrl="~/home.aspx">Home</asp:HyperLink>
+                &nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="auto-style7" NavigateUrl="~/AddBook.aspx">Add Book</asp:HyperLink>
+&nbsp;&nbsp;&nbsp; <asp:HyperLink ID="HyperLink3" runat="server" CssClass="auto-style7" NavigateUrl="~/searchBook.aspx">Search Book</asp:HyperLink>
+                &nbsp;&nbsp;&nbsp; <asp:HyperLink ID="HyperLink4" runat="server" CssClass="auto-style7" NavigateUrl="~/AllBook.aspx">All Books</asp:HyperLink>
+                &nbsp;&nbsp;&nbsp; <asp:HyperLink ID="HyperLink5" runat="server" CssClass="auto-style7" NavigateUrl="~/AddStd.aspx">Add Student</asp:HyperLink>
+                &nbsp;&nbsp;&nbsp; <asp:HyperLink ID="HyperLink6" runat="server" CssClass="auto-style7" NavigateUrl="~/SearchStd.aspx">Search Student</asp:HyperLink>
+                &nbsp;&nbsp;&nbsp; <asp:HyperLink ID="HyperLink7" runat="server" CssClass="auto-style7" NavigateUrl="~/AllStd.aspx">All Students</asp:HyperLink>
+                &nbsp;&nbsp;&nbsp; <asp:HyperLink ID="HyperLink8" runat="server" CssClass="auto-style7" NavigateUrl="~/AddAdmin.aspx">Add Admin</asp:HyperLink>
+                &nbsp;&nbsp;&nbsp; <asp:HyperLink ID="HyperLink9" runat="server" CssClass="auto-style7" NavigateUrl="~/IssueBook.aspx">Book Issue</asp:HyperLink>
+                &nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink10" runat="server" CssClass="auto-style7" NavigateUrl="~/AdminReq.aspx">Requests</asp:HyperLink>
+                &nbsp;&nbsp;&nbsp;
+                <asp:Button ID="Button1" runat="server" Text="logout" OnClick="Button1_Click" />
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
